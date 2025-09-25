@@ -1,4 +1,4 @@
-# 🌐 Quiz 1 - Web Programming
+# 🌐 Quiz 1 - Website Development Project
 
 **Safa Mashita**  
 5025241022  
