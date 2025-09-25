@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz1 Website - Safa Mashita</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  
+  <body>
+
+    <!-- ========== NAVBAR SECTION STARTS ========== -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="/quiz1" style="color: #3f396d">
+            My Website
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/quiz1">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/hometown">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/food">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/tourist">Tourist Places</a>
+            </li>
+            </ul>
+        </div>
+        <button
+            class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+            onclick="window.location.href='/quiz1/contact';"
+        >
+            Contact
+        </button>
+        </div>
+    </nav>
+    <!-- ========== NAVBAR SECTION ENDS ========== -->
+
+    <!-- ========== PROFILE SECTION STARTS ========== -->
+    <section class="profile mt-5 py-5" id="profile">
+      <div class="container-fluid px-4">
+        <div class="row justify-content-evenly">
+          <div class="col-2 col-lg-7 profile-detail" data-aos="slide-right">
+            <div class="heading mt-2 mt-md-2">
+              <small>My Profile</small>
+              <h3>Hi, everyone!</h3>
+              <p class="text-muted">
+                My name is Safa Mashita, and I am from Surabaya, Indonesia.
+                I am a third-semester undergraduate student majoring in Informatics Engineering at ITS.
+                I love exploring new programming languages, building creative projects, and solving complex problems. 
+                My goal is to contribute to the tech industry by developing innovative solutions that can make a positive impact on people's lives.
+              </p>
+              <p class="text-muted">
+                Several of my key strengths are highlighted on the side. For complete details, please see my CV below!
+              </p>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                <a href="https://drive.google.com/uc?export=download&id=12mXJN2rU1ENl72mRn8dZeIDpJiGOf3CY"
+                   style="text-decoration: none;color: #fff;">
+                  Download CV
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 profile-with-progress" data-aos="slide-left">
+            <div class="bar-profile">
+              <div class="bar-label">Public Speaking</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-html" data-percent="85">0%</div>
+              </div>
+            </div>
+
+            <div class="bar-profile">
+              <div class="bar-label">Leadership</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-js" data-percent="75">0%</div>
+              </div>
+            </div>
+
+            <div class="bar-profile">
+              <div class="bar-label">Problem Solving</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-php" data-percent="90">0%</div>
+              </div>
+            </div>
+
+            <div class="bar-profile">
+              <div class="bar-label">Teamwork</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-react" data-percent="80">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function animateProgressBar(bar) {
+        let target = parseInt(bar.getAttribute("data-percent"));
+        let width = 0;
+        let count = 0;
+        
+        bar.style.width = "0%";
+        bar.textContent = "0%";
+        
+        let interval = setInterval(() => {
+          if (width >= target) {
+            clearInterval(interval);
+          } else {
+            width++;
+            count++;
+            bar.style.width = width + "%";
+            bar.textContent = count + "%";
+          }
+        }, 15); 
+      }
+
+      window.addEventListener("load", () => {
+        document.querySelectorAll(".bar-fill").forEach(bar => {
+          animateProgressBar(bar);
+        });
+
+        document.querySelectorAll(".bar-profile").forEach(profileBar => {
+          const barFill = profileBar.querySelector(".bar-fill");
+          
+          profileBar.addEventListener("mouseenter", () => {
+            animateProgressBar(barFill);
+          });
+        });
+      });
+    </script>
+
+    <section class="experience mt-6 py-5" id="experience">
+      <div class="heading text-center mb-4" data-aos="fade-up">
+        <small>My Experience</small>
+        <h3>The Path I Have Traveled</h3>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-evenly px-4">
+          <div class="col-md-4 col-10 mt-3 mt-md-0" data-aos="zoom-in">
+            <div class="card shadow-lg border-0 h-100">
+              <img src="../images/ilits.png" class="card-img-top" alt="Experience 1" />
+              <div class="card-body text-center">
+                <h4 class="card-title">INI LHO ITS! 2025</h4>
+                <p class="text-muted">Staff Central Event and Master of Ceremony ITS Fairground INI LHO ITS! 2025, a platform to introduce ITS and spread the spirit of higher education to high school students across Indonesia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-10 mt-3 mt-md-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="card shadow-lg border-0 h-100">
+              <img src="../images/sch.png" class="card-img-top" alt="Experience 2" />
+              <div class="card-body text-center">
+                <h4 class="card-title">SCHEMATICS 2025</h4>
+                <p class="text-muted">Vice Director II NLC SCHEMATICS 2025, which focuses on programming and logic competitions while introducing technology to the public through seminars.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-10 mt-3 mt-md-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card shadow-lg border-0 h-100">
+              <img src="../images/gerex.png" class="card-img-top" alt="Experience 3" />
+              <div class="card-body text-center">
+                <h4 class="card-title">GERIGI X UKM EXPO 2025</h4>
+                <p class="text-muted">Staff Closing Event GERIGI x UKM EXPO ITS 2025, a freshmen orientation event at Institut Teknologi Sepuluh Nopember that introduces new students to campus life and student organizations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== PROFILE SECTION ENDS ========== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function animateProgressBar(bar) {
+        let target = parseInt(bar.getAttribute("data-percent"));
+        let width = 0;
+        let count = 0;
+        
+        bar.style.width = "0%";
+        bar.textContent = "0%";
+        
+        let interval = setInterval(() => {
+          if (width >= target) {
+            clearInterval(interval);
+          } else {
+            width++;
+            count++;
+            bar.style.width = width + "%";
+            bar.textContent = count + "%";
+          }
+        }, 15); 
+      }
+
+      window.addEventListener("load", () => {
+        document.querySelectorAll(".bar-fill").forEach(bar => {
+          animateProgressBar(bar);
+        });
+
+        document.querySelectorAll(".bar-profile").forEach(profileBar => {
+          const barFill = profileBar.querySelector(".bar-fill");
+          
+          profileBar.addEventListener("mouseenter", () => {
+            animateProgressBar(barFill);
+          });
+        });
+      });
+    </script>
+
+    <!-- ========== FOOTES SECTION ENDS ========== -->
+
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+
+    <script src="../js/script.js"></script>
+
+    </body>
+    </html>

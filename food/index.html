@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz1 Website - Safa Mashita</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  
+  <body>
+
+    <!-- ========== NAVBAR SECTION STARTS ========== -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="/quiz1" style="color: #3f396d">
+            My Website
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/quiz1">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/hometown">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/food">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz1/tourist">Tourist Places</a>
+            </li>
+            </ul>
+        </div>
+        <button
+            class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+            onclick="window.location.href='/quiz1/contact';"
+        >
+            Contact
+        </button>
+        </div>
+    </nav>
+    <!-- ========== NAVBAR SECTION ENDS ========== -->
+    
+    <!-- ========== LOCAL FOOD SECTION STARTS ========== --> 
+    <section class="portfolio" id="food">
+      <div class="heading text-center pt-1">
+        <small>Surabaya Cuisine</small>
+        <h3>Authentic Arek Suroboyo Flavors</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="rice">Rice & Lontong</button>
+        <button class="filter-item" data-filter="soup">Soup</button>
+        <button class="filter-item" data-filter="salad">Salad & Mix</button>
+      </div>
+      
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 rice all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="../images/rujak.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Rujak Cingur</h4>
+                <span class="badge bg-secondary badge-pill">Spicy</span>
+                <span class="badge bg-secondary badge-pill">Unique</span>
+                <span class="badge bg-secondary badge-pill mb-2">Iconic</span><br />
+                <a class="link" onclick="openFoodModal('rujak-cingur','Rujak Cingur')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 salad all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="../images/pecelsemanggi.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Pecel Semanggi</h4>
+                <span class="badge bg-secondary badge-pill">Healthy</span>
+                <span class="badge bg-secondary badge-pill">Spicy</span>
+                <span class="badge bg-secondary badge-pill mb-2">Rare</span><br />
+                <a class="link" onclick="openFoodModal('pecel-semanggi','Pecel Semanggi')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 rice all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="../images/lontongbalap.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Lontong Balap</h4>
+                <span class="badge bg-secondary badge-pill">Hearty</span>
+                <span class="badge bg-secondary badge-pill">Savory</span>
+                <span class="badge bg-secondary badge-pill mb-2">Popular</span><br />
+                <a class="link" onclick="openFoodModal('lontong-balap','Lontong Balap')">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 soup all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="../images/rawon.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Rawon</h4>
+                <span class="badge bg-secondary badge-pill">Rich</span>
+                <span class="badge bg-secondary badge-pill">Traditional</span>
+                <span class="badge bg-secondary badge-pill mb-2">East Java</span><br />
+                <a class="link" onclick="openFoodModal('rawon','Rawon')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 salad all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="../images/tahucampur.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tahu Campur</h4>
+                <span class="badge bg-secondary badge-pill">Light</span>
+                <span class="badge bg-secondary badge-pill">Fresh</span>
+                <span class="badge bg-secondary badge-pill mb-2">Affordable</span><br />
+                <a class="link" onclick="openFoodModal('tahu-campur','Tahu Campur')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 rice all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="../images/tahutek.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tahu Tek</h4>
+                <span class="badge bg-secondary badge-pill">Protein-rich</span>
+                <span class="badge bg-secondary badge-pill">Satisfying</span>
+                <span class="badge bg-secondary badge-pill mb-2">Street Food</span><br />
+                <a class="link" onclick="openFoodModal('tahu-tek','Tahu Tek')">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== LOCAL FOOD SECTION ENDS ========== -->
+
+    <!-- Food Modal Popup -->
+    <div class="modal fade" id="foodModal" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="foodModalLabel">Food Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="foodModalBody">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+
+    <script src="../js/script.js"></script>
+
+    </body>
+    </html>

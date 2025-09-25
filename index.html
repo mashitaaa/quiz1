@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz1 Website - Safa Mashita</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  
+  <body>
+
+  <!-- ========== NAVBAR SECTION STARTS ========== -->
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="/quiz1" style="color: #3f396d">
+        My Website
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/quiz1">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz1/profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz1/hometown">Hometown</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz1/food">Local Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quiz1/tourist">Tourist Places</a>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+        onclick="window.location.href='/quiz1/contact';"
+      >
+        Contact
+      </button>
+    </div>
+  </nav>
+  <!-- ========== NAVBAR SECTION ENDS ========== -->
+ 
+  <!-- ========== HOMEPAGE SECTION STARTS ========== -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-10 col-md-4 d-none d-md-block text-center">
+          <img src="images/foto.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-10 col-md-6 text-md-start content-box">
+          <h2 style="color: #3f396d">
+            Greetings! I Am <br /><span class="c-orange">Safa Mashita</span>
+          </h2>
+          <p class="text-muted">
+            I'm an undergraduate Informatics Engineering ITS student, 
+            passionate about technology and innovation.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" 
+            onclick="window.open('https://www.its.ac.id/informatika/id/tentang-kami/','_blank')">
+            About My School
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- ========== HOMEPAGE SECTION ENDS ========== -->
+
+    <!-- ========== PROFILE SECTION STARTS ========== -->
+    <section class="profile mt-5 py-5" id="profile">
+      <div class="container-fluid px-4">
+        <div class="row justify-content-evenly">
+          <div class="col-2 col-lg-7 profile-detail" data-aos="slide-right">
+            <div class="heading mt-2 mt-md-2">
+              <small>My Profile</small>
+              <h3>Hi, everyone!</h3>
+              <p class="text-muted">
+                My name is Safa Mashita, and I am from Surabaya, Indonesia.
+                I am a third-semester undergraduate student majoring in Informatics Engineering at ITS.
+                I love exploring new programming languages, building creative projects, and solving complex problems. 
+                My goal is to contribute to the tech industry by developing innovative solutions that can make a positive impact on people's lives.
+              </p>
+              <p class="text-muted">
+                Several of my key strengths are highlighted on the side. For complete details, please see my CV below!
+              </p>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                <a href="https://drive.google.com/uc?export=download&id=12mXJN2rU1ENl72mRn8dZeIDpJiGOf3CY"
+                   style="text-decoration: none;color: #fff;">
+                  Download CV
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 profile-with-progress" data-aos="slide-left">
+            <div class="bar-profile">
+              <div class="bar-label">Public Speaking</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-html" data-percent="85">0%</div>
+              </div>
+            </div>
+
+            <div class="bar-profile">
+              <div class="bar-label">Leadership</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-js" data-percent="75">0%</div>
+              </div>
+            </div>
+
+            <div class="bar-profile">
+              <div class="bar-label">Problem Solving</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-php" data-percent="90">0%</div>
+              </div>
+            </div>
+
+            <div class="bar-profile">
+              <div class="bar-label">Teamwork</div>
+              <div class="bar-container">
+                <div class="bar-fill bar-react" data-percent="80">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function animateProgressBar(bar) {
+        let target = parseInt(bar.getAttribute("data-percent"));
+        let width = 0;
+        let count = 0;
+        
+        bar.style.width = "0%";
+        bar.textContent = "0%";
+        
+        let interval = setInterval(() => {
+          if (width >= target) {
+            clearInterval(interval);
+          } else {
+            width++;
+            count++;
+            bar.style.width = width + "%";
+            bar.textContent = count + "%";
+          }
+        }, 15); 
+      }
+
+      window.addEventListener("load", () => {
+        document.querySelectorAll(".bar-fill").forEach(bar => {
+          animateProgressBar(bar);
+        });
+
+        document.querySelectorAll(".bar-profile").forEach(profileBar => {
+          const barFill = profileBar.querySelector(".bar-fill");
+          
+          profileBar.addEventListener("mouseenter", () => {
+            animateProgressBar(barFill);
+          });
+        });
+      });
+    </script>
+
+    <section class="experience mt-6 py-5" id="experience">
+      <div class="heading text-center mb-4" data-aos="fade-up">
+        <small>My Experience</small>
+        <h3>The Path I Have Traveled</h3>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-evenly px-4">
+          <div class="col-md-4 col-10 mt-3 mt-md-0" data-aos="zoom-in">
+            <div class="card shadow-lg border-0 h-100">
+              <img src="images/ilits.png" class="card-img-top" alt="Experience 1" />
+              <div class="card-body text-center">
+                <h4 class="card-title">INI LHO ITS! 2025</h4>
+                <p class="text-muted">Staff Central Event and Master of Ceremony ITS Fairground INI LHO ITS! 2025, a platform to introduce ITS and spread the spirit of higher education to high school students across Indonesia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-10 mt-3 mt-md-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="card shadow-lg border-0 h-100">
+              <img src="images/sch.png" class="card-img-top" alt="Experience 2" />
+              <div class="card-body text-center">
+                <h4 class="card-title">SCHEMATICS 2025</h4>
+                <p class="text-muted">Vice Director II NLC SCHEMATICS 2025, which focuses on programming and logic competitions while introducing technology to the public through seminars.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-10 mt-3 mt-md-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card shadow-lg border-0 h-100">
+              <img src="images/gerex.png" class="card-img-top" alt="Experience 3" />
+              <div class="card-body text-center">
+                <h4 class="card-title">GERIGI X UKM EXPO 2025</h4>
+                <p class="text-muted">Staff Closing Event GERIGI x UKM EXPO ITS 2025, a freshmen orientation event at Institut Teknologi Sepuluh Nopember that introduces new students to campus life and student organizations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== PROFILE SECTION ENDS ========== -->
+
+    <!-- ========== HOMETOWN SECTION STARTS ========== -->
+    <section class="testimonial mt-6 pt-5" id="hometown">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/hometown.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>My Hometown</small>
+            <h3>Surabaya, Indonesia</h3>
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Surabaya, the capital of East Java, is Indonesia's second-largest city and a vibrant hub of commerce and culture. Known as the "City of Heroes" for its pivotal role in Indonesia's independence struggle.
+                      </p>
+                      <h4>City of Heroes</h4>
+                      <small class="fs-6 text-muted">Historical Value</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        From the bustling streets of Tunjungan to the serene waters of the Kalimas River, Surabaya offers a unique blend of traditional Javanese culture and metropolitan energy. 
+                      </p>
+                      <h4>Urban Harmony</h4>
+                      <small class="fs-6 text-muted">Modern City with Traditional Soul</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Home to incredible culinary experiences like rujak cingur, Surabaya is a food lover's paradise. The warmth of its people, known as "Arek Suroboyo," makes every corner of this city feel like home.
+                      </p>
+                      <h4>Culinary Paradise</h4>
+                      <small class="fs-6 text-muted">Heart of East Javanese Culture</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Surabaya is also known as the "Green City" thanks to its many parks and open spaces such as Taman Bungkul and Kebun Binatang Surabaya, perfect for relaxation and family time.
+                      </p>
+                      <h4>Green City</h4>
+                      <small class="fs-6 text-muted">Nature & Parks</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      Surabaya is home to top universities like ITS and UNAIR, making it a vibrant city of students, innovation, and youthful energy shaping Indonesia’s future.
+                    </p>
+                    <h4>City of Education</h4>
+                    <small class="fs-6 text-muted">Youth & Innovation</small>
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        As a strategic port city, Surabaya has long been the gateway to Eastern Indonesia, with a strong maritime tradition and history connected to trade and naval strength. 
+                      </p>
+                      <h4>Maritime Heritage</h4>
+                      <small class="fs-6 text-muted">Port City Legacy</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== HOMETOWN SECTION ENDS ========== -->
+
+    <!-- ========== LOCAL FOOD SECTION STARTS ========== --> 
+    <section class="portfolio" id="food">
+      <div class="heading text-center pt-1">
+        <small>Surabaya Cuisine</small>
+        <h3>Authentic Arek Suroboyo Flavors</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="rice">Rice & Lontong</button>
+        <button class="filter-item" data-filter="soup">Soup</button>
+        <button class="filter-item" data-filter="salad">Salad & Mix</button>
+      </div>
+      
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 rice all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/rujak.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Rujak Cingur</h4>
+                <span class="badge bg-secondary badge-pill">Spicy</span>
+                <span class="badge bg-secondary badge-pill">Unique</span>
+                <span class="badge bg-secondary badge-pill mb-2">Iconic</span><br />
+                <a class="link" onclick="openFoodModal('rujak-cingur','Rujak Cingur')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 salad all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/pecelsemanggi.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Pecel Semanggi</h4>
+                <span class="badge bg-secondary badge-pill">Healthy</span>
+                <span class="badge bg-secondary badge-pill">Spicy</span>
+                <span class="badge bg-secondary badge-pill mb-2">Rare</span><br />
+                <a class="link" onclick="openFoodModal('pecel-semanggi','Pecel Semanggi')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 rice all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/lontongbalap.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Lontong Balap</h4>
+                <span class="badge bg-secondary badge-pill">Hearty</span>
+                <span class="badge bg-secondary badge-pill">Savory</span>
+                <span class="badge bg-secondary badge-pill mb-2">Popular</span><br />
+                <a class="link" onclick="openFoodModal('lontong-balap','Lontong Balap')">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 soup all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/rawon.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Rawon</h4>
+                <span class="badge bg-secondary badge-pill">Rich</span>
+                <span class="badge bg-secondary badge-pill">Traditional</span>
+                <span class="badge bg-secondary badge-pill mb-2">East Java</span><br />
+                <a class="link" onclick="openFoodModal('rawon','Rawon')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 salad all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tahucampur.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tahu Campur</h4>
+                <span class="badge bg-secondary badge-pill">Light</span>
+                <span class="badge bg-secondary badge-pill">Fresh</span>
+                <span class="badge bg-secondary badge-pill mb-2">Affordable</span><br />
+                <a class="link" onclick="openFoodModal('tahu-campur','Tahu Campur')">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 rice all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/tahutek.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tahu Tek</h4>
+                <span class="badge bg-secondary badge-pill">Protein-rich</span>
+                <span class="badge bg-secondary badge-pill">Satisfying</span>
+                <span class="badge bg-secondary badge-pill mb-2">Street Food</span><br />
+                <a class="link" onclick="openFoodModal('tahu-tek','Tahu Tek')">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== LOCAL FOOD SECTION ENDS ========== -->
+
+    <!-- Food Modal Popup -->
+    <div class="modal fade" id="foodModal" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="foodModalLabel">Food Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="foodModalBody">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- ========== TOURIST PLACES SECTION STARTS ========== -->
+    <section class="blog mt-1 pb-5" id="tourist">
+      <div class="heading text-center pt-5">
+        <small>Explore Surabaya</small>
+        <h3>Tourist Places & Attractions</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/sampoerna.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Historic Site</small
+              ><span class="ms-3">Museum</span>
+              <h4 class="card-title">
+                <a href="">House of Sampoerna</a>
+              </h4>
+              <p class="text-muted">
+                A fascinating museum showcasing Indonesia's tobacco heritage, housed in a beautiful Dutch colonial building with guided tours and cultural exhibits.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/tupal.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Iconic Landmark</small
+              ><span class="ms-3">Monument</span>
+              <h4 class="card-title">
+                <a href="">Heroes Monument (Tugu Pahlawan)</a>
+              </h4>
+              <p class="text-muted">
+                An iconic 41-meter tall monument commemorating the Battle of Surabaya, featuring a museum with historical artifacts and panoramic city views.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/kbs.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Family Attractions</small
+              ><span class="ms-3">Funspot</span>
+              <h4 class="card-title">
+                <a href="">Surabaya Zoo (KBS)</a>
+              </h4>
+              <p class="text-muted">
+                One of Southeast Asia's oldest zoos, home to over 2,000 animals including rare Indonesian species like Komodo dragons and Sumatran tigers.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/sampoerna.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Historical Site</small
+                    ><span class="text-muted ms-2">Museum</span>
+                  <h4 class="card-title mt-3">House of Sampoerna</h4>
+                  <p class="text-muted mt-3">
+                    The House of Sampoerna is a museum dedicated to the heritage of the Sampoerna family and the Indonesian tobacco industry. Located in the old Sampoerna cigarette factory, this Dutch colonial building from 1862 offers visitors a glimpse into Indonesia's tobacco history. The museum features vintage machinery, historical photographs, and guided tours that explain the traditional hand-rolling cigarette process. Visitors can also enjoy the beautiful architecture and learn about the family's contribution to Indonesian culture and economy.
+                  </p>
+                  <div class="details mt-3">
+                    <p>• <strong>Opening Hours:</strong> Tuesday - Sunday, 9:00 AM - 7:00 PM</p>
+                    <p>• <strong>Location:</strong> 6 Taman Sampoerna Street, Krembangan Utara</p>
+                    <p>• <strong>Admission:</strong> Free</p>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/tupal.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Iconic Landmark</small
+                    ><span class="text-muted ms-2">Monument</span>
+                  <h4 class="card-title mt-3">Heroes Monument (Tugu Pahlawan)</h4>
+                  <p class="text-muted mt-3">
+                    The Heroes Monument stands as a proud symbol of Surabaya's role in Indonesia's independence struggle. This 41-meter tall concrete monument commemorates the brave heroes who fought in the Battle of Surabaya on November 10, 1945. The monument's design represents a bamboo shoot reaching skyward, symbolizing the people's determination to achieve independence. The underground museum houses historical artifacts, dioramas, and documents from the revolution period, offering visitors an immersive experience of Indonesia's fight for freedom.
+                  </p>
+                  <div class="details mt-3">
+                    <p>• <strong>Opening Hours:</strong> Tuesday - Sunday, 8:00 AM - 4:00 PM</p>
+                    <p>• <strong>Location:</strong> Pahlawan Street, Alun-alun Contong</p>
+                    <p>• <strong>Admission:</strong> IDR 5,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/kbs.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Family Attraction</small
+                    ><span class="text-muted ms-2 ms-md-0">Funspot</span>
+                  <h4 class="card-title mt-3">Surabaya Zoo (KBS)</h4>
+                  <p class="text-muted mt-3">Established in 1916, Surabaya Zoo is one of Southeast Asia's oldest zoological gardens. Home to over 2,000 animals from 351 species, the zoo features rare Indonesian wildlife including Komodo dragons, Sumatran tigers, orangutans, and various bird species. The 15-hectare park offers educational programs, animal shows, and interactive experiences for families. Recent renovations have improved animal habitats and visitor facilities, making it a perfect destination for wildlife enthusiasts and families looking to learn about biodiversity conservation.</p>
+                  <div class="details mt-3">
+                    <p>• <strong>Opening Hours:</strong> Daily, 7:00 AM - 5:00 PM</p>
+                    <p>• <strong>Location:</strong> 1 Setail Street, Darmo, Wonokromo</p>
+                    <p>• <strong>Admission:</strong> IDR 15,000 (adults), IDR 10,000 (children)</p>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== TOURIST PLACES SECTION ENDS ========== -->
+
+    <!-- ========== CONTACT SECTION STARTS ========== -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>My Contact</small>
+        <h3>Any Questions or Feedback?</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>32 Ikan Dorang Street, Surabaya, Indonesia</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+62 882-1743-0548</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>safamashita15@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>safamashita.blogspot.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xkgqwkjw" method="POST">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html" />
+              <button
+                type="submit"
+                class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== CONTACT SECTION ENDS ========== -->
+
+
+    <!-- ========== FOOTER SECTION STARTS ========== -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="pt-4" data-aos="fade-up" style="color:#ffc107;">My Website</h3>
+      
+      <div class="link-group mt-6" data-aos="fade-up">
+        <a href="#home">Home</a> 
+        <div class="vr"></div>
+        <a href="#about">Profile</a> 
+        <div class="vr"></div>
+        <a href="#service">Hometown</a> 
+        <div class="vr"></div>
+        <a href="#portfolio">Local Foods</a> 
+        <div class="vr"></div>
+        <a href="#blog">Tourist Places</a> 
+        <div class="vr"></div>
+        <a href="#contact">Contact</a> 
+      </div>
+      <p class="mt-4" data-aos="fade-up">
+
+        &copy; 2025 All Rights Reserved  by Safa Mashita
+
+      </p>
+    </footer>
+    <!-- ========== FOOTES SECTION ENDS ========== -->
+
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+
+    </body>
+    </html>
