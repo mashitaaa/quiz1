@@ -4,4 +4,4 @@
 5025241022  
 Web Programming (D)  
 
-🔗 [🌍 Lihat Website](https://mashitaaa.github.io/quiz1/)
+🔗 https://mashitaaa.github.io/quiz1/
